@@ -1,0 +1,6 @@
+{
+    "port": "/dev/cu.usbserial-DN05IJGI",
+    "board": "esp32:esp32:node32s",
+    "configuration": "FlashFreq=80,UploadSpeed=921600",
+    "sketch": "toggleByButton.ino"
+}
