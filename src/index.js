@@ -40,6 +40,15 @@ app.listen(3000,()=>{
     // toggle of locker (Switch)
     app.get('/toggle',(req,res) => {
         isOn = !isOn;
+        console.log(isOn);
+        if(!isOn){
+            console.log('time out condition');
+            console.log(isOn);
+            setTimeout(() => {
+                isOn = true;
+                console.log(isOn);
+            },5000);
+        }
         res.sendStatus(200);
     });
 
